@@ -22,13 +22,18 @@ Data description
 
 
 ### This repo consists of following files:
+
 1. Three .csv files: train.csv and test.csv
    train.csv: 364 rows x 2 columns
    test.csv: 156 rows  x 1 column
    train_modified.csv: 379 rows x 2 columns
-2.  Manipuri_copy:
+   
+2. Pre-processed Manipuri_Images:
     Contains preprocessed additional Manipuri images to compemnsate for Data-Imbalance.
+    
 3.  Source File : .ipynb Python File
+
+4.  Train and test Folders: These contains training and testing images respectively.
 
 ### Methodology:
 
@@ -38,7 +43,7 @@ Data description
 4. Next, the target categories to be classified are encoded.
 5. Train/Test Split Approach with stratified parameter is used to split training and validation data.
 6. Xception Pre-trained CNN model is used for training the data since, it provides robust results. The model outputs a validation accuracy of 82%.
-7. Hyper-Parameterization technique is used to improve the model's accuracy using RandomSearchCV and Keras-Tuner. The validation accuracy of the Model increases to about 86.4%
+7. Hyper-Parameterization technique is used to improve the model's accuracy and tune the hyper-parameters using RandomSearchCV and Keras-Tuner. The validation accuracy of the Model increases to about 86.4%
 8. Finally, the best model is used for making the prediction.
 
 
